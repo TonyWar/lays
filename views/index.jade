@@ -1,0 +1,113 @@
+extends layout
+
+block content
+  section#content-layout
+    div.index-page-content
+      div.first-block
+        div.slide-gallery
+          div.first-image_fit
+            div.image
+        div.icon-menu
+          div.icon-item.icon-menu_1
+            div.icon-wrap
+              div.icon-bg.zoomIn.animated
+                canvas(id="photo" width="112" height="112").image
+            p Загружай фото 
+              br 
+              с хештегом 
+              br
+              span  #letolays
+          div.icon-item.icon-menu_2
+            div.icon-wrap
+              div.icon-bg.zoomIn.animated
+                canvas(id="photo" width="112" height="112").image
+            p Собирай
+              br
+              лайки
+          div.icon-item.icon-menu_3
+            div.icon-wrap
+              div.icon-bg.zoomIn.animated
+                canvas(id="photo" width="112" height="112").image
+            p Выигрывай
+              br 
+              призы
+
+        div.text-of-first
+          h1 ЛЕТО
+          h1 ВКУСНЕЕ
+          h1 С
+            span  Lay's
+      div.second-block#second.wow(data-wow-duration = '1.5s'  )
+        div.description-block
+          div.text-block
+            div(style='white-space:pre;').description-text
+              | загружай
+              | фото
+              | с хэштегом
+              br
+              span #летосlays
+              br
+              button.description-button Галерея
+        div.gallery-block
+
+      div.third-block
+        div.balloon-image.wow#balloon-image
+          div.meadow
+          div.balloon
+        div.description-block.wow#third-red
+          div.text-block
+            div(style='white-space:pre;').description-text
+              | Выигрывай
+              | призы
+              | от Lay's
+            p Этим летом бренд
+              | Lay’s задает тренд
+              | на яркое, вкусное
+              | лето и на позитивный
+              | желтый цвет.
+            button.description-button О проекте
+              
+
+          
+            
+      div.fourth-block
+        div.image-block.wow#fimage-block
+          div.beach
+        div.map-block.wow#fmap-block
+          button.description-button Перейти
+
+block header-menu
+  header#header-layout
+    div.menu-widget
+      div.menu_wrap
+        div.nav-item.index
+          div.nav-icon
+          p #летосLays
+          div.mobile-menu
+            div.menu-line.l1
+            div.menu-line.l2
+            div.menu-line.l3
+        div.nav-item.gallery
+          div.nav-icon
+          p Галерея
+        div.nav-item.about
+          div.nav-icon
+          pО проекте
+        div.nav-item.lays
+          div.nav-icon
+          p Лето с Lay's
+        
+block footer
+  footer
+    div.footer-block
+      div.footer-logo
+      p © 2015 Lay's Russia.
+        span  Все права защищены
+      div.footer-links-block
+        a(href="#").fb
+        a(href="#").vk
+        a(href="#").world
+        a(href="#").yt
+
+    
+  

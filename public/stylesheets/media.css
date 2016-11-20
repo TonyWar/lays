@@ -1,0 +1,423 @@
+/*Средняя версия*/
+
+@media (max-width:1024px) and (min-width:680px) {
+    .balloon,
+    .meadow,
+    .fourth-block .image-block .beach {
+        animation-name: scale-item;
+        -webkit-animation-name: scale-item;
+        animation-duration: 10s;
+        animation-timing-function: ease;
+        -webkit-animation-timing-function: ease-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-delay: 3s;
+    }
+    #header-layout {
+        width: 110px;
+    }
+    footer,
+    #content-layout {
+        padding: 0 0 0 110px;
+    }
+    .first-block {
+        visibility: hidden;
+    }
+    body.loaded .first-block {
+        animation-name: emersion, move_to_left;
+        -webkit-animation-name: emersion, move_to_left;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        animation-timing-function: ease-out;
+        -webkit-animation-timing-function: ease-out;
+        visibility: visible !important;
+    }
+}
+
+@-webkit-keyframes scale-item {
+    from {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+        visibility: visible;
+    }
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-item {
+    from {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+        visibility: visible;
+    }
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 27px;
+    right: 25px;
+    width: 32.5px;
+    height: 25.5px;
+}
+
+.menu-line {
+    width: 32px;
+    height: 5px;
+    background: #fc202e;
+    position: absolute;
+    left: 50%;
+    margin-left: -16px;
+    opacity: 1;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -ms-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.loaded .menu-widget .mobile-menu:active .l2 {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+
+.loaded .menu-widget .mobile-menu:active .l3 {
+    -webkit-transform: rotate(-45deg) translate3d(0, 0, 0);
+    -moz-transform: rotate(-45deg) translate3d(0, 0, 0);
+    transform: rotate(-45deg) translate3d(0, 0, 0);
+}
+
+.loaded .menu-widget .mobile-menu:active .l1 {
+    -webkit-transform: rotate(45deg) translate3d(-1px, -1px, 0);
+    -moz-transform: rotate(45deg) translate3d(-1px, -1px, 0);
+    transform: rotate(45deg) translate3d(-1px, -1px, 0);
+}
+
+.menu-widget .index .l2 {
+    top: 10px;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    transform-origin: center center;
+}
+
+.menu-widget .l3 {
+    top: 21px;
+}
+
+
+/*Мобильная версия*/
+
+@media (max-width:680px) {
+    html,
+    body {
+        font-size: 2.5vw!important;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .nav-item:not(.index) {
+        display: none;
+    }
+    .menu-widget,
+    .menu-widget .index {
+        width: 100%;
+        height: 80px;
+        float: right;
+    }
+    .menu-widget .menu_wrap {
+        width: 100%;
+        height: 80px;
+        overflow: hidden;
+        -webkit-transition: height .2s linear .5s;
+        -moz-transition: height .2s linear .5s;
+        -o-transition: height .2s linear .5s;
+        transition: height .2s linear .5s;
+    }
+    #header-layout {
+        position: fixed;
+        width: 100%;
+        height: 80px;
+        z-index: 2;
+        top: 0;
+        -webkit-transition: -webkit-transform .4s ease;
+        -moz-transition: -moz-transform .4s ease;
+        -o-transition: -o-transform .4s ease;
+        transition: transform .4s ease;
+    }
+    .menu-widget .nav-item .nav-icon {
+        top: 14px;
+        left: 19px;
+        width: 57px!important;
+        height: 50px!important;
+        background-size: 57px 50px;
+        background-position: center;
+        margin-top: 0;
+    }
+    .menu-widget .nav-item.index p {
+        position: absolute;
+        left: 50%;
+        margin-left: -59px;
+        padding-top: 30px;
+        padding-left: 0;
+        width: 118px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-top: 0;
+        top: 0;
+    }
+    .first-block {
+        height: 65rem;
+    }
+    .text-of-first {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        margin-left: -62px;
+        width: 136px;
+    }
+    .slide-gallery {
+        background-image: url(../images/mindex.png);
+        background-position-x: 50%;
+    }
+    .text-of-first {
+        position: absolute;
+        width: 14rem;
+        margin-left: -4rem;
+        margin-top: 0;
+    }
+    .text-of-first h1 {
+        margin-left: 0;
+        font-size: 44px;
+        letter-spacing: 1px;
+        color: #d62b2b;
+    }
+    #content-layout {
+        margin-top: 80px;
+    }
+    .text-of-first h1:nth-child(2),
+    .text-of-first h1:nth-child(3) {
+        font-size: 25px;
+        line-height: 24px;
+        font-weight: lighter;
+    }
+    .text-of-first h1:nth-child(3) span {
+        font-size: 2.7rem;
+        letter-spacing: 3px;
+        line-height: 0.8;
+        margin: 0;
+        font-weight: bold;
+    }
+    .icon-menu {
+        width: 30rem;
+        margin: 14rem auto 0;
+    }
+    .index-page-content .icon-item {
+        width: 10rem!important;
+    }
+    .first-block,
+    .second-block,
+    .third-block,
+    .fourth-block {
+        height: 85rem;
+    }
+    .first-block .description-block,
+    .first-block .gallery-block,
+    .second-block .description-block,
+    .second-block .gallery-block,
+    .third-block .description-block,
+    .third-block .balloon-image,
+    .fourth-block .image-block,
+    .fourth-block .map-block {
+        width: 100%;
+        height: 50%;
+    }
+    .fourth-block .image-block,
+    .third-block .balloon-image,
+    .second-block .gallery-block {
+        overflow: visible
+    }
+    .balloon-image {
+        float: left!important;
+        position: absolute!important;
+        top: 62%!important;
+        height: 100rem!important;
+    }
+    .meadow {
+        position: static;
+        margin-top: 0;
+        height: 50rem;
+    }
+    .fourth-block .image-block::after,
+    .third-block .balloon-image::after,
+    .second-block .gallery-block::after {
+        content: '';
+        margin: -5.8rem 0% 0% 18rem;
+        border: 3rem solid transparent;
+        border-bottom: 3rem solid white;
+        position: absolute;
+        display: block;
+        top: 0;
+    }
+    .third-block .balloon-image::after {
+        margin-top: -4.1rem;
+        border-bottom-color: #1a67c3;
+        z-index: 1;
+    }
+    .fourth-block .image-block::after {
+        z-index: 1;
+        border-bottom-color: #add4ee;
+    }
+    .fourth-block .map-block::after,
+    .third-block .description-block::after {
+        display: none;
+    }
+    .fourth-block .image-block {
+        top: 50%;
+    }
+    .second-block .text-block .description-text {
+        display: block;
+        margin: 45% 0px 0px 10%;
+        font-weight: bold;
+        font-size: 3rem;
+        line-height: 3.45rem;
+    }
+    .second-block .description-button {
+        position: relative;
+        bottom: 3.6rem;
+        margin: 0 0 0 50%;
+        width: 12.6rem;
+        height: 4rem;
+        background-color: rgba(143, 12, 0, .1);
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .second-block .description-button:hover {
+        background-color: rgba(74, 74, 74, .3);
+        color: #fff;
+    }
+    .third-block .description-text {
+        white-space: normal!important;
+        display: block;
+        margin-left: 0rem;
+        font-size: 3.4rem;
+        line-height: 3.75rem;
+        width: 90%;
+    }
+    .third-block .text-block:after {
+        width: 16rem;
+        height: 16rem;
+        background-size: 100% 100%;
+        left: 19.5rem;
+        top: 33%;
+        margin-top: -4.29rem;
+    }
+    .third-block .description-block p {
+        display: block;
+        margin-top: 3.32rem;
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        width: 18rem;
+        margin-left: 0rem;
+        white-space: pre;
+    }
+    .description-button {
+        width: 13.6rem;
+        height: 4rem;
+        background-color: rgba(143, 12, 0, .1);
+        text-align: center;
+        font-size: 1.3rem;
+        color: white;
+        letter-spacing: 1px;
+        line-height: 1.79rem;
+        cursor: pointer;
+        border: 2px solid white;
+        text-transform: uppercase;
+        margin-top: 1%;
+        margin-left: 27%;
+    }
+    .balloon {
+        position: absolute;
+        background-image: url(../images/1560/Balloon.png);
+        background-position-x: 60%;
+        background-position-y: 79%;
+        background-repeat: no-repeat;
+        background-size: 71%;
+        height: 25rem;
+        width: 40rem;
+        margin: 0;
+        top: 3rem;
+        left: 0rem;
+    }
+    .fourth-block .description-button {
+        position: relative;
+        top: 24%;
+        left: 50%;
+        margin-left: -6.5rem;
+        width: 14.6rem;
+        font-size: 1.3rem;
+    }
+    footer p span {
+        display: none;
+    }
+    .fourth-block .image-block .beach {
+        background-size: 90%;
+    }
+}
+
+
+/*Большие экраны*/
+
+@media (min-width:1024px) {
+    .balloon,
+    .meadow,
+    .fourth-block .image-block .beach {
+        animation-name: scale-item;
+        -webkit-animation-name: scale-item;
+        animation-duration: 10s;
+        animation-timing-function: ease;
+        -webkit-animation-timing-function: ease-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-delay: 3s;
+    }
+    #header-layout {
+        width: 150px;
+    }
+    footer,
+    #content-layout {
+        padding: 0 0 0 150px;
+    }
+    .first-block {
+        visibility: hidden;
+    }
+    body.loaded .first-block {
+        animation-name: emersion, move_to_left;
+        -webkit-animation-name: emersion, move_to_left;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        animation-timing-function: ease-out;
+        -webkit-animation-timing-function: ease-out;
+        visibility: visible !important;
+    }
+}
+
+html,
+body {
+    font-size: 1.5vw;
+}

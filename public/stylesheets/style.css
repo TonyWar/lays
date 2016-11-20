@@ -1,0 +1,81 @@
+.index-page-content .icon-menu p{
+    opacity: 0;
+    text-align: center;
+    margin:0;
+}
+
+body.loaded .index-page-content .icon-menu .icon-menu_3 .icon-bg,
+body.loaded .index-page-content .icon-menu .icon-menu_3 p{
+    -webkit-transition: all 400ms cubic-bezier(0.25, 0.1, 0.38, 1.45) 2400ms;
+    -moz-transition: all 400ms cubic-bezier(0.25, 0.1, 0.38, 1.45) 2400ms;
+    transition: all 400ms cubic-bezier(0.25, 0.1, 0.38, 1.45) 2400ms;
+    opacity: 1;
+} 
+
+body.loaded .index-page-content .icon-menu .icon-bg{
+    width: 5rem;
+    height: 5rem;
+    margin: 4px auto 0;
+}
+
+body.loaded .index-page-content .icon-menu .icon-menu_2 .icon-bg,
+body.loaded .index-page-content .icon-menu .icon-menu_2 p{
+    -webkit-transition: all .4s cubic-bezier(.25,.1,.38,1.45) 2s;
+    -moz-transition: all .4s cubic-bezier(.25,.1,.38,1.45) 2s;
+    transition: all .4s cubic-bezier(.25,.1,.38,1.45) 2s;
+    opacity:1;
+}
+
+body.loaded .index-page-content .icon-menu .icon-menu_1 .icon-bg,
+body.loaded .index-page-content .icon-menu .icon-menu_1 p{
+    -webkit-transition: all .4s cubic-bezier(.25,.1,.38,1.45) 1.6s;
+    -moz-transition: all .4s cubic-bezier(.25,.1,.38,1.45) 1.6s;
+    -o-transition: all .4s cubic-bezier(.25,.1,.38,1.45) 1.6s;
+    transition: all 400ms cubic-bezier(0.25, 0.1, 0.38, 1.45) 1585.24ms;
+    opacity:1;
+}
+
+
+@keyframes move_to_left{
+    0%{transform:translateX(40%);}
+    100%{transform: translateX(0);}
+}
+@-webkit-keyframes move_to_left{
+    0%{transform: translateX(40%);}
+    100%{transform: translateX(0);}
+}
+@keyframes move_to_right{
+    0%{transform:translateX(-40%);}
+    100%{transform: translateX(0);}
+}
+@-webkit-keyframes move_to_right{
+    0%{transform: translateX(-40%);}
+    100%{transform: translateX(0);}
+}
+@keyframes emersion{
+    0%{opacity:0}
+    10%{opacity:.1}
+    20%{opacity:.2}
+    30%{opacity:.3}
+    40%{opacity:.4}
+    50%{opacity:.5}
+    60%{opacity:.6}
+    70%{opacity:.7}
+    80%{opacity:.8}
+    90%{opacity:.9}
+    100%{opacity:1}
+    }
+
+@-webkit-keyframes emersion{
+    0%{opacity:0}
+    10%{opacity:.1}
+    20%{opacity:.2}
+    30%{opacity:.3}
+    40%{opacity:.4}
+    50%{opacity:.5}
+    60%{opacity:.6}
+    70%{opacity:.7}
+    80%{opacity:.8}
+    90%{opacity:.9}
+    100%{opacity:1}
+    }

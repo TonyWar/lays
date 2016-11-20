@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/base.css')
+    link(rel='stylesheet', href='/stylesheets/media.css')
+    link(rel='stylesheet', href='/stylesheets/animate.css')
+    meta(charset='utf-8')
+    link(rel="shortcut icon", href='/images/icons/1560/lays.png')
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    
+  body
+      block header-menu
+      block content
+      block footer
+      script(src = "/javascripts/index_page.js") 
+      script(src = "/javascripts/wow.min.js") 
+      script new WOW().init();
+    
